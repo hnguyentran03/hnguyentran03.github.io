@@ -14,14 +14,12 @@ export const Experience = () => {
                 {
                     skills.map((skill, id) => { 
                         return (
-                        <>
                             <div key={id} className={styles.skill}>
                                 <div className={styles.skillImageContainer}>
                                     <img src={getImageUrl(skill.imageSrc)} alt={skill.title}/>
                                 </div>
                                 <p>{skill.title}</p>
                             </div>
-                        </>
                         );
                     })}
             </div>
@@ -29,7 +27,6 @@ export const Experience = () => {
                 {
                     history.map((historyItem, id) => {
                         return (
-                            <>
                                 <li key={id} className={styles.historyItem}>
                                     <img src={getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organization} logo`}/>
                                     <div className={styles.historyItemDetails}>
@@ -40,7 +37,6 @@ export const Experience = () => {
                                         })}</ul>
                                     </div>
                                 </li>
-                            </>
                         )
                     })
                 }
