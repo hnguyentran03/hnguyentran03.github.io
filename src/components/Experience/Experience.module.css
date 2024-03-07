@@ -22,7 +22,7 @@
     margin-top: 14px;
 }
 
-.aboutImage {
+.experienceImage {
     max-width: 35%;
     width: auto;
     height: auto;
@@ -89,12 +89,12 @@ img {
     text-indent: -5px; /* Pull text back to align with bullet */
   }
   
-  .historyItemList li::before {
+.historyItemList li::before {
     content: "•";
     display: inline-block; /* Make sure the bullet aligns properly */
     width: 15px; /* Width of the space for the bullet */
     margin-left: -10px; /* Align the bullet properly */
-  }
+}
 
 @media screen and (max-width: 830px) {
     .content {
@@ -108,7 +108,7 @@ img {
         gap: 9px;
     }
     
-    .aboutImage {
+    .experienceImage {
         display: none;
     }
 }

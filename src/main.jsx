@@ -11,3 +11,29 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+const blobAnimation = () => {
+  const blob = document.getElementById('blob');
+  
+  document.body.onpointermove = event => {
+    const {clientX, clientY} = event;
+    const scrollX = window.scrollX || window.pageXOffset;
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    const adjustedX = clientX + scrollX;
+    const adjustedY = clientY + scrollY;
+    console.log(clientX, clientY);
+    // blob.style.left = `${clientX}px`;
+    // blob.style.top = `${clientY}px`;
+    blob.animate({
+      left: `${adjustedX}px`,
+      top: `${adjustedY}px`,
+    }, {duration: 3000, fill:'forwards'});
+  };
+};
+
+const init = () => {
+  blobAnimation();
+  // randomizeEffect();
+}
+window.onload = init;
