@@ -1,6 +1,30 @@
 
 [
     {
+      "title": "Python",
+      "imageSrc": "skills/python.png"
+    },
+    {
+      "title": "C",
+      "imageSrc": "skills/c.png"
+    },
+    {
+      "title": "JavaScript",
+      "imageSrc": "skills/javascript.png"
+    },
+    {
+      "title": "NumPy",
+      "imageSrc": "skills/numpy.png"
+    },
+    {
+      "title": "sklearn",
+      "imageSrc": "skills/sklearn.png"
+    },
+    {
+      "title": "Pandas",
+      "imageSrc": "skills/pandas.png"
+    },
+    {
       "title": "HTML",
       "imageSrc": "skills/html.png"
     },
@@ -11,5 +35,9 @@
     {
       "title": "React",
       "imageSrc": "skills/react.png"
+    },
+    {
+      "title": "Git",
+      "imageSrc": "skills/git.png"
     }
 ]

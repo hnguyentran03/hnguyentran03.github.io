@@ -1,7 +1,7 @@
 [
     {
       "title": "Tetris",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/tetris.png",
       "description": "This is a project adapted from a homework from 15-112 at CMU with multiple additional features including an AI.",
       "skills": ["Python"],
       "demo": "",
@@ -9,7 +9,7 @@
     },
     {
       "title": "112maze",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/maze.png",
       "description": "A 15-112 term project with the focus on implementing maze-generation, pathfinding and raycasting.",
       "skills": ["Python"],
       "demo": "",
@@ -17,8 +17,8 @@
     },
     {
       "title": "Fraud Detection",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the data analysis and machine learning models, specifically decision tree classifiers.",
+      "imageSrc": "projects/dec-tree.png",
+      "description": "This is a project made to learn the data analysis and machine learning models to detect transaction frauds.",
       "skills": ["Python", "ML"],
       "demo": "",
       "source": "https://github.com/hnguyentran03/card_detection"
