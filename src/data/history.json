@@ -1,29 +1,18 @@
 [
     {
-      "role": "Software Engineer",
-      "organization": "Google",
-      "startDate": "Sept, 2022",
-      "endDate": "Present",
-      "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-      "imageSrc": "history/google.png"
+      "role": "AI Intern",
+      "organization": "FPT Software",
+      "startDate": "Dec, 2023",
+      "endDate": "Jan, 2024",
+      "experiences": ["Learned about various ML models", "Labeled and annotated data for semantic search", "Developed a prediction model for transaction frauds"],
+      "imageSrc": ""
     },
     {
-      "role": "UI Designer",
-      "organization": "Mirosoft",
-      "startDate": "Aug, 2021",
-      "endDate": "Aug, 2022",
-      "experiences": ["Worked on Windows 11", "Designed the control panel"],
-      "imageSrc": "history/microsoft.png"
-    },
-    {
-      "role": "SWE Intern",
-      "organization": "Netflix",
-      "startDate": "Apr, 2020",
-      "endDate": "Jun, 2020",
-      "experiences": [
-        "Worked on component library",
-        "Helped create UI components"
-      ],
-      "imageSrc": "history/netflix.png"
+      "role": "Teaching Assistant",
+      "organization": "Carnegie Mellon University",
+      "startDate": "Jan, 2022",
+      "endDate": "Dec, 2022",
+      "experiences": ["Led a review team providing feedback on homeworks, exams and class notes", "Taught recitations, group sessions and office hours", "Mentored students through a 3-week long term project"],
+      "imageSrc": ""
     }
   ]

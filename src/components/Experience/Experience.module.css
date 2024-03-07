@@ -22,38 +22,14 @@
     margin-top: 14px;
 }
 
-.skills {
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 37px;
+.aboutImage {
+    max-width: 35%;
+    width: auto;
+    height: auto;
 }
 
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 11px;
-}
-
-.skillImageContainer {
-    background-color: var(--color-secondary);
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-}
-
-.skillImageContainer img {
-    width: 75px;
-}
-
-.skill p {
-    font-size: 25px;
-    font-family: var(--font-roboto);
-    font-weight: 500;
+img {
+    object-fit: contain;
 }
 
 .history {
@@ -98,9 +74,27 @@
     margin-top: 6px;
     list-style-position: inside;
     font-size: 25px;
-    list-style-type: disc;
+    list-style-type: none;
     margin-left: 17px;
 }
+
+.historyItemList {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+  }
+
+.historyItemList li {
+    margin-left: 10px; /* Adjust margin to create space for bullet */
+    padding-left: 0; /* Reset padding */
+    text-indent: -5px; /* Pull text back to align with bullet */
+  }
+  
+  .historyItemList li::before {
+    content: "•";
+    display: inline-block; /* Make sure the bullet aligns properly */
+    width: 15px; /* Width of the space for the bullet */
+    margin-left: -10px; /* Align the bullet properly */
+  }
 
 @media screen and (max-width: 830px) {
     .content {
@@ -109,14 +103,12 @@
         gap: 34px;
     }
 
-    .skills {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-    }
-
     .history {
         width: 100%;
         gap: 9px;
+    }
+    
+    .aboutImage {
+        display: none;
     }
 }

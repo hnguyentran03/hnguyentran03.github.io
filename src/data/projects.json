@@ -1,26 +1,26 @@
 [
     {
-      "title": "Project A",
+      "title": "Tetris",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "This is a project adapted from a homework from 15-112 at CMU with multiple additional features including an AI.",
+      "skills": ["Python"],
+      "demo": "",
+      "source": "https://github.com/hnguyentran03/tetris"
     },
     {
-      "title": "Project B",
+      "title": "112maze",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "A 15-112 term project with the focus on implementing maze-generation, pathfinding and raycasting.",
+      "skills": ["Python"],
+      "demo": "",
+      "source": "https://github.com/hnguyentran03/112-tp"
     },
     {
-      "title": "Project C",
+      "title": "Fraud Detection",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "This is a project made to learn the data analysis and machine learning models, specifically decision tree classifiers.",
+      "skills": ["Python", "ML"],
+      "demo": "",
+      "source": "https://github.com/hnguyentran03/card_detection"
     }
   ]
