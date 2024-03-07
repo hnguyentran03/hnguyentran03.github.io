@@ -33,7 +33,7 @@ img {
 }
 
 .history {
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -44,12 +44,23 @@ img {
     flex-direction: row;
     align-items: center;
     gap: 17px;
-    background: var(--color-secondary);
-    background: linear-gradient(90deg, 
+    /* background: var(--color-secondary); */
+    /* background: linear-gradient(90deg, 
                                 var(--color-secondary) 0%,
-                                var(--color-bg) 100%);
+                                var(--color-bg) 100%); */
     border-radius: 10px;
     padding: 24px;
+
+    background-image: linear-gradient(90deg,
+                                var(--color-secondary) 0%,
+                                var(--color-bg) 100%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.historyItem:hover  {
+    background-size: 100% 100%;
 }
 
 .historyItem img {

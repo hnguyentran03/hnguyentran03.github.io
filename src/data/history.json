@@ -5,7 +5,8 @@
       "startDate": "Dec, 2023",
       "endDate": "Jan, 2024",
       "experiences": ["Learned about various ML models", "Labeled and annotated data for semantic search", "Developed a prediction model for transaction frauds"],
-      "imageSrc": "history/fpt.png"
+      "imageSrc": "history/fpt.png",
+      "link": "https://fptsoftware.com/"
     },
     {
       "role": "Teaching Assistant",
@@ -13,6 +14,7 @@
       "startDate": "Jan, 2022",
       "endDate": "Dec, 2022",
       "experiences": ["Led a review team providing feedback on homeworks, exams and class notes", "Taught recitations, group sessions and office hours", "Mentored students through a 3-week long term project"],
-      "imageSrc": "history/112.png"
+      "imageSrc": "history/112.png",
+      "link": "https://www.cs.cmu.edu/~112/"
     }
   ]

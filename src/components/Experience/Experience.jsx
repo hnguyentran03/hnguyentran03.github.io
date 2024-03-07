@@ -9,7 +9,7 @@ export const Experience = () => {
     <section className={styles.container} id='experience'>
         <h2 className={styles.title}>Experience</h2>
         <div className={styles.content}>
-            <img src={getImageUrl('history/experienceImage.png')} alt='Experience Image' className={styles.experienceImage}/>
+            {/* <img src={getImageUrl('history/experienceImage.png')} alt='Experience Image' className={styles.experienceImage}/> */}
             <ul className={styles.history}>
                 {
                     history.map((historyItem, id) => {
