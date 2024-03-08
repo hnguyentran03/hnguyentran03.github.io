@@ -56,16 +56,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 700;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
         
     .text p {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
-        letter-spacing: 1.25px;
+        letter-spacing: 1px;
     }
 
     .links {
@@ -75,8 +75,8 @@
     .link a {
         color: var(--color-text);
         text-decoration: none;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
-        letter-spacing: 1.25px;
+        letter-spacing: 1px;
     }
 }
