@@ -19,7 +19,7 @@
       "title": "Fraud Detection",
       "imageSrc": "projects/dec-tree.png",
       "description": "This is a project made to learn the data analysis and machine learning models to detect transaction frauds.",
-      "skills": ["Python", "ML"],
+      "skills": ["Jupyter", "ML"],
       "demo": "",
       "source": "https://github.com/hnguyentran03/card_detection"
     }
