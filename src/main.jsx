@@ -33,7 +33,7 @@ const blobAnimation = () => {
 };
 
 const init = () => {
-  blobAnimation();
+  // blobAnimation();
   // randomizeEffect();
 }
 window.onload = init;
