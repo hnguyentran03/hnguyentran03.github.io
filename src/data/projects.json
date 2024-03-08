@@ -1,6 +1,16 @@
 [
     {
+      "title": "Fraud Detection",
+      "date": "Jan 2024",
+      "imageSrc": "projects/dec-tree.png",
+      "description": "This is a project made to learn the data analysis and machine learning models to detect transaction frauds.",
+      "skills": ["Jupyter", "ML"],
+      "demo": "",
+      "source": "https://github.com/hnguyentran03/card_detection"
+    },
+    {
       "title": "Tetris",
+      "date": "Oct 2021 - Feb 2022",
       "imageSrc": "projects/tetris.png",
       "description": "This is a project adapted from a homework from 15-112 at CMU with multiple additional features including an AI.",
       "skills": ["Python"],
@@ -9,18 +19,11 @@
     },
     {
       "title": "112maze",
+      "date": "Nov - Dec 2021",
       "imageSrc": "projects/maze.png",
       "description": "A 15-112 term project with the focus on implementing maze-generation, pathfinding and raycasting.",
       "skills": ["Python"],
       "demo": "",
       "source": "https://github.com/hnguyentran03/112-tp"
-    },
-    {
-      "title": "Fraud Detection",
-      "imageSrc": "projects/dec-tree.png",
-      "description": "This is a project made to learn the data analysis and machine learning models to detect transaction frauds.",
-      "skills": ["Jupyter", "ML"],
-      "demo": "",
-      "source": "https://github.com/hnguyentran03/card_detection"
     }
   ]
