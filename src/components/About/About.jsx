@@ -9,7 +9,6 @@ export const About = () => {
   return (
     <section className={styles.container} id="about">
       <div className={styles.content}>
-        {/* <img src={getImageUrl('about/aboutImage.png')} alt='About Image' className={styles.aboutImage}/> */}
         <div className={styles.col}>
           <h2 className={styles.title}>About</h2>
           <div className={`${styles.aboutItems} ${styles.aboutItemText}`}>

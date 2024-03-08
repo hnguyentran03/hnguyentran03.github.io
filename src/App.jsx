@@ -11,7 +11,6 @@ function App() {
   return (
   <div className={styles.App}>
     <Navbar/>
-    {/* <div id="blob"/> */}
     <Hero />
     <About />
     <Experience />
