@@ -39,6 +39,11 @@ img {
     gap: 40px;
 }
 
+.historyItemContainer {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 .historyItem {
     display: flex;
     flex-direction: row;
