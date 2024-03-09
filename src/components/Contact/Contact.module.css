@@ -1,18 +1,24 @@
 @import '../../vars.css';
 
 .container {
-    color: var(--color-text);
+    color: var(--color-text-title);
     margin-top: 120px;
     background-color: var(--color-secondary);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     width: 100vw;
     padding: 58px 10%;
     gap: 10px;
 }
 
 .text {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.text h2 {
     font-size: 80px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -39,7 +45,7 @@
 }
 
 .link a {
-    color: var(--color-text);
+    color: var(--color-text-title);
     text-decoration: none;
     font-size: 30px;
     font-weight: 400;
@@ -60,6 +66,15 @@
         font-weight: 700;
         letter-spacing: 2px;
     }
+    
+    .text h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
 
         
     .text p {
@@ -73,7 +88,7 @@
     }
 
     .link a {
-        color: var(--color-text);
+        color: var(--color-text-title);
         text-decoration: none;
         font-size: 20px;
         font-weight: 400;

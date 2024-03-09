@@ -25,11 +25,11 @@
   font-weight: 500;
 }
 
-
 .description {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 400;
+  color: var(--color-text);
 }
 
 .skills {
@@ -59,7 +59,7 @@
 
 .link {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-text-title);
   font-size: 30px;
   font-weight: 600;
   border-radius: 100px;

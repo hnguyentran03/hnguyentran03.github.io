@@ -1,55 +1,61 @@
-import React, { useState } from "react";
+import React from "react";
 
-import styles from "./Navbar.module.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
+import styles from "./NavBar.module.css";
 import { getImageUrl } from "../../utils";
 
-export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+export const NavBar = () => {
   return (
-    <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Portfolio
-      </a>
-      <div className={styles.menu}>
-        <img
-          className={styles.menuBtn}
-          src={
-            menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
-          }
-          alt="menu-button"
-          onClick={() => {
-            setMenuOpen(!menuOpen);
-            console.log(menuOpen && styles.menuOpen);
-          }}
-        ></img>
-
-        {/* Adds styling whether the menu is open or not*/}
-        <ul
-          className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/13g5xvp82H0UQK9rsWVEfVkpelhDP5oxv/view?usp=sharing">
-              Resume
+    <Navbar expand="lg" className={styles.navbar_sticky}>
+      <Container>
+        <Navbar.Brand href="#home" className={styles.navbar_brand}>
+          Portfolio
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span className={styles.navbar_toggler_icon}></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#about" className={styles.navbar_link}>
+              About
+            </Nav.Link>
+            <Nav.Link href="#experience" className={styles.navbar_link}>
+              Experience
+            </Nav.Link>
+            <Nav.Link href="#projects" className={styles.navbar_link}>
+              Projects
+            </Nav.Link>
+            <Nav.Link href="#contact" className={styles.navbar_link}>
+              Contact
+            </Nav.Link>
+          </Nav>
+          <span className={styles.navbar_text}>
+            <div className={styles.social_icon}>
+              <a href="#">
+                <img src={getImageUrl("contact/githubIcon.png")} alt="Github" />
+              </a>
+              <a href="#">
+                <img
+                  src={getImageUrl("contact/linkedinIcon.png")}
+                  alt="Linkedin"
+                />
+              </a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/13g5xvp82H0UQK9rsWVEfVkpelhDP5oxv/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="vvd">
+                <span>Resume</span>
+              </button>
             </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          </span>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };

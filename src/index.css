@@ -1,3 +1,5 @@
+@import "./vars.css";
+
 * {
   box-sizing: border-box; /* Adds the border to fitting calculations */
   margin: 0;

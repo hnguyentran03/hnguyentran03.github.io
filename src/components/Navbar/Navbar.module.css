@@ -1,83 +1,176 @@
 @import "../../vars.css";
 
-.navbar {
-    position: relative;
+.navbar_sticky {
+    padding: 18px 0;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    transition:  0.32s ease-in-out;
+}
+
+.navbar_brand {
+    font-size: 30px !important;
+    font-weight: 700;
+    color: var(--color-text-title);
+}
+
+.navbar_brand:hover, .navbar_brand:focus {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-text-title)  !important;
+}
+
+.navbar_link {
+    font-weight: 400;
+    color: var(--color-text-title) !important;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+a.navbar_link:hover, a.navbar_link.active {
+    opacity: 1;
+}
+
+span.navbar_text {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    padding-top: 61px;
-    margin: 0 10%;
-    z-index: 2;
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-text);
+.social_icon {
+    display: inline-block;
+    margin-left: 15px;
 }
 
-.menu {
-    display: flex;
+.social_icon a {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid var(--color-text-title);
 }
 
-.menuItems {
-    display: flex;
-    gap: 47px;
-    list-style: none;
+.social_icon a::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: var(--color-text-title);
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
 }
 
-.menuItems a {
-    font-size: 25px;
-    color: var(--color-text);
-    text-decoration: none;
+.social_icon a:hover::before {
+    transform: scale(1);
 }
 
-.menuBtn {
-    display: none;
+.social_icon a img {
+	width: 50%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
 }
 
-/* Changes size of items based on screen size */
-@media screen and (max-width: 830px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.social_icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
 
-    .menu {
-        position: absolute;
-        right: 0;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
-    }
+.navbar_text button {
+  font-weight: 700;
+  color: var(--color-text-title);
+  border: 1px solid var(--color-text-title);
+  padding: 20px 30px;
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top:15px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
 
-    .menuBtn {
-        display: block;
-        cursor: pointer;
-    }
+.navbar_text button span {
+  z-index: 1;
+}
 
-    .menuItems {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background-color: var(--color-secondary);
-        background: linear-gradient(
-            0deg, 
-            var(--color-secondary) 0%, 
-            var(--color-dark) 100%);
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0,25);
-    }
+.navbar_text button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--color-bg);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
 
-    .menuOpen {
-        display: flex;
-        z-index: 1;
-    }
+.navbar_text button:hover {
+  color: var(--color-bg);
+}
 
+.navbar_text button:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    background-color: var(--color-text-title);
+	transition: 0.3s ease-in-out;
+}
+
+.navbar_toggler:active,
+.navbar_toggler:focus {
+	outline: none;
+    box-shadow: none;
+}
+
+.navbar_toggler_icon {
+  width: 30px;
+  height: 20px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid var(--color-text-title);
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+.navbar_toggler_icon:focus {
+	border-bottom: 2px solid var(--color-text-title);
+}
+
+.navbar_toggler_icon:after, .navbar_toggler_icon:before {
+	width: 24px;
+	position: absolute;
+	height: 3px;
+	background-color: var(--color-text-title);
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+
+.navbar_toggler_icon:after {
+	top: 8px;
+}
+
+.navbar_toggler_icon:active:after, .navbar_toggler_icon:after:focus {
+	transform: rotate(45deg);
+	background-color: var(--color-text-title);
+	height: 2px;
+}
+
+.navbar_toggler_icon:active:before, .navbar_toggler_icon:after:focus {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: var(--color-text-title);
+	height: 2px;
+}
+
+.navbar_toggler_icon:active {
+	border-color: transparent;
 }
