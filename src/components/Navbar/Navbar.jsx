@@ -1,55 +1,39 @@
 import React, { useState } from "react";
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
-export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+export const NavBar = () => {
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Portfolio
-      </a>
-      <div className={styles.menu}>
-        <img
-          className={styles.menuBtn}
-          src={
-            menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
-          }
-          alt="menu-button"
-          onClick={() => {
-            setMenuOpen(!menuOpen);
-            console.log(menuOpen && styles.menuOpen);
-          }}
-        ></img>
-
-        {/* Adds styling whether the menu is open or not*/}
-        <ul
-          className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/13g5xvp82H0UQK9rsWVEfVkpelhDP5oxv/view?usp=sharing">
-              Resume
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
