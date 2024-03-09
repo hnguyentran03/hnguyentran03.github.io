@@ -34,14 +34,18 @@ export const NavBar = () => {
           </Nav>
           <span className={styles.navbar_text}>
             <div className={styles.social_icon}>
-              <a href="#">
-                <img src={getImageUrl("contact/githubIcon.png")} alt="Github" />
-              </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/hnguyentran03/"
+                 target="_blank"
+                 rel="noopener noreferrer">
                 <img
                   src={getImageUrl("contact/linkedinIcon.png")}
                   alt="Linkedin"
                 />
+              </a>
+              <a href="https://github.com/hnguyentran03"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <img src={getImageUrl("contact/githubIcon.png")} alt="Github" />
               </a>
             </div>
             <a
