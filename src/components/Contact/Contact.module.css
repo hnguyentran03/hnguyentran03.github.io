@@ -1,97 +1,115 @@
 @import '../../vars.css';
 
-.container {
-    color: var(--color-text-title);
-    margin-top: 120px;
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.contact {
+    background: linear-gradient(180deg, var(--color-bg), var(--color-secondary) 50%);;
+    padding: 60px 0 200px 0;
+    margin-top: -100px;
+}
+
+.contact img {
+    width: 92%;
+}
+
+.contactImg {
     align-items: center;
-    width: 100vw;
-    padding: 58px 10%;
-    gap: 10px;
+    margin-top: 250px;
 }
 
-.text {
-    font-size: 80px;
+.contactText {
+    font-size: 45px;
     font-weight: 700;
-    letter-spacing: 4px;
-}
-.text h2 {
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 4px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    color: var(--color-text-title);
 }
 
-.text p {
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 2px;
+.contactRow {
+    align-items: center;
 }
 
-.links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    gap: 26px;
+.contactFormCol {
+    padding: 1px 8px 0px 0px;
 }
 
-.link {
+.contactFormBtnCol {
+    padding: 1px 8px 0px 0px;
     display: flex;
     align-items: center;
-    gap: 25px;
 }
 
-.link a {
+.contactFormInput, .contactFormTextArea {
+    width: 100%;
+    background: var(--color-bg);
+    border: 1px solid var(--color-text);
+    border-radius: 20px;
     color: var(--color-text-title);
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 830px) {
-    .container {
-        flex-direction: column;
-        gap: 23px;
-    }
-    
-    .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-    
-    .text h2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
+.contactFormInput:focus, .contactFormTextArea:focus {
+    background: var(--color-text-title);
+    color: var(--color-bg);
+}
 
-        
-    .text p {
-        font-size: 20px;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
+.contactFormInput::placeholder, .contactFormTextArea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text);
+}
 
-    .links {
-        align-items: center;
-    }
 
-    .link a {
-        color: var(--color-text-title);
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
+.contactFormInput:focus::placeholder, .contactFormTextArea:focus::placeholder {
+    color: var(--color-bg);
+    opacity: 0.8;
+}
+
+.contactFormBtn {
+    font-weight: 700;
+    color: var(--color-text-title);
+    background-color: var(--color-bg);
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+  
+.contactFormBtnText {
+    z-index: 1;
+    position: relative;
+}
+
+.contactFormBtn::before {
+    content: "";
+    background: var(--color-primary);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+  
+.contactFormBtn:hover::before {
+    width: 100%;
+}
+
+.status {
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.danger {
+    color: red;
+}
+
+.success {
+    color: lime;
 }

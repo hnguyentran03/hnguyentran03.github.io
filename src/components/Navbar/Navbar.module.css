@@ -1,6 +1,6 @@
 @import "../../vars.css";
 
-.navbar_sticky {
+.navbarSticky {
     padding: 18px 0;
     width: 100%;
     top: 0;
@@ -8,19 +8,19 @@
     transition:  0.32s ease-in-out;
 }
 
-.navbar_brand {
+.navbarBrand {
     font-size: 30px !important;
     font-weight: 700;
     color: var(--color-text-title);
 }
 
-.navbar_brand:hover, .navbar_brand:focus {
+.navbarBrand:hover, .navbarBrand:focus {
     font-size: 30px;
     font-weight: 700;
     color: var(--color-text-title)  !important;
 }
 
-.navbar_link {
+.navbarLink {
     font-weight: 400;
     color: var(--color-text-title) !important;
     letter-spacing: 0.8px;
@@ -29,21 +29,21 @@
     opacity: 0.7;
 }
 
-a.navbar_link:hover, a.navbar_link.active {
+a.navbarLink:hover, a.navbarLink.active {
     opacity: 1;
 }
 
-span.navbar_text {
+span.navbarText {
     display: flex;
     align-items: center;
 }
 
-.social_icon {
+.socialIcon {
     display: inline-block;
     margin-left: 15px;
 }
 
-.social_icon a {
+.socialIcon a {
     width: 50px;
     height: 50px;
     display: inline-flex;
@@ -56,7 +56,7 @@ span.navbar_text {
     border: 1px solid var(--color-text-title);
 }
 
-.social_icon a::before {
+.socialIcon a::before {
     content: "";
     width: 50px;
     height: 50px;
@@ -67,21 +67,21 @@ span.navbar_text {
 	transition: 0.3s ease-in-out;
 }
 
-.social_icon a:hover::before {
+.socialIcon a:hover::before {
     transform: scale(1);
 }
 
-.social_icon a img {
+.socialIcon a img {
 	width: 50%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
 
-.social_icon a:hover img {
+.socialIcon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-.navbar_text button {
+.navbarText button {
   font-weight: 700;
   color: var(--color-text-title);
   border: 1px solid var(--color-text-title);
@@ -94,11 +94,11 @@ span.navbar_text {
 	transition: 0.3s ease-in-out;
 }
 
-.navbar_text button span {
+.navbarText button span {
   z-index: 1;
 }
 
-.navbar_text button::before {
+.navbarText button::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -110,11 +110,11 @@ span.navbar_text {
   transition: 0.3s ease-in-out;
 }
 
-.navbar_text button:hover {
+.navbarText button:hover {
   color: var(--color-bg);
 }
 
-.navbar_text button:hover::before {
+.navbarText button:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;
@@ -123,13 +123,13 @@ span.navbar_text {
 	transition: 0.3s ease-in-out;
 }
 
-.navbar_toggler:active,
-.navbar_toggler:focus {
+.navbarToggler:active,
+.navbarToggler:focus {
 	outline: none;
     box-shadow: none;
 }
 
-.navbar_toggler_icon {
+.navbarTogglerIcon {
   width: 30px;
   height: 20px;
   background-image: none;
@@ -139,11 +139,11 @@ span.navbar_text {
   top: -2px;
 }
 
-.navbar_toggler_icon:focus {
+.navbarTogglerIcon:focus {
 	border-bottom: 2px solid var(--color-text-title);
 }
 
-.navbar_toggler_icon:after, .navbar_toggler_icon:before {
+.navbarTogglerIcon:after, .navbarTogglerIcon:before {
 	width: 24px;
 	position: absolute;
 	height: 3px;
@@ -155,22 +155,22 @@ span.navbar_text {
 	transition: all 300ms linear;
 }
 
-.navbar_toggler_icon:after {
+.navbarTogglerIcon:after {
 	top: 8px;
 }
 
-.navbar_toggler_icon:active:after, .navbar_toggler_icon:after:focus {
+.navbarTogglerIcon:active:after, .navbarTogglerIcon:after:focus {
 	transform: rotate(45deg);
 	background-color: var(--color-text-title);
 	height: 2px;
 }
 
-.navbar_toggler_icon:active:before, .navbar_toggler_icon:after:focus {
+.navbarTogglerIcon:active:before, .navbarTogglerIcon:after:focus {
 	transform: translateY(8px) rotate(-45deg);
 	background-color: var(--color-text-title);
 	height: 2px;
 }
 
-.navbar_toggler_icon:active {
+.navbarTogglerIcon:active {
 	border-color: transparent;
 }

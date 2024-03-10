@@ -1,44 +1,113 @@
-import React from "react";
+import { useState, useRef } from "react";
+
+import { Row, Col, Container } from "react-bootstrap";
+import emailjs from "@emailjs/browser";
 
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Contact = () => {
+  const [buttonText, setButtonText] = useState("Send");
+  const [status, setStatus] = useState({});
+  const form = useRef();
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+    setButtonText("Sending...");
+
+    emailjs
+      .sendForm("service_2z5tgpg", "template_cbyifdk", form.current, {
+        publicKey: "EXcMNC3QWevzm-VIU",
+      })
+      .then(
+        () => {
+          setButtonText("Send");
+          setStatus({ success: true, message: "Message sent successfully!" });
+        },
+        (error) => {
+          setButtonText("Send");
+          setStatus({
+            success: false,
+            message: "Something went wrong, please try again later.",
+          });
+        }
+      );
+  };
+
   return (
-    <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
-        <h2>Contacts</h2>
-        {/* <p>Feel free to reach out!</p> */}
-      </div>
-      <ul className={styles.links}>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email Icon" />
-          <a href="mailto:hnguyentran03@gmail.com">hnguyentran03@gmail.com</a>
-        </li>
-        <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn Icon"
-          />
-          <a
-            href="https://www.linkedin.com/in/hnguyentran03/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            linkedin.com/hnguyentran03
-          </a>
-        </li>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github Icon" />
-          <a
-            href="https://github.com/hnguyentran03"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github.com/hnguyentran03
-          </a>
-        </li>
-      </ul>
-    </footer>
+    <section id="contact" className={styles.contact}>
+      <Container>
+        <Row className={styles.contactRow}>
+          <Col md={6}>
+            <img src={getImageUrl("contact/contactImage.png")} alt="Contact" className={styles.contactImg}/>
+          </Col>
+          <Col md={6}>
+            <h2 className={styles.contactText}>Email Me</h2>
+            <form onSubmit={sendEmail} ref={form}>
+              <Row>
+                <Col sm={6} className={styles.contactFormCol}>
+                  <input
+                    className={styles.contactFormInput}
+                    type="text"
+                    placeholder="First Name"
+                    name="first_name"
+                  />
+                </Col>
+                <Col sm={6} className={styles.contactFormCol}>
+                  <input
+                    className={styles.contactFormInput}
+                    type="text"
+                    placeholder="Last Name"
+                    name="last_name"
+                  />
+                </Col>
+                <Col sm={12} className={styles.contactFormCol}>
+                  <input
+                    className={styles.contactFormInput}
+                    type="email"
+                    placeholder="Email Address"
+                    name="user_email"
+                  />
+                </Col>
+                <Col sm={12} className={styles.contactFormCol}>
+                  <input
+                    className={styles.contactFormInput}
+                    type="text"
+                    placeholder="Subject"
+                    name="subject"
+                  />
+                </Col>
+                <Col sm={12} className={styles.contactFormCol}>
+                  <textarea
+                    className={styles.contactFormTextArea}
+                    row="6"
+                    placeholder="Message"
+                    name="message"
+                  />
+                </Col>
+                <Col className={styles.contactFormBtnCol}>
+                  <button className={styles.contactFormBtn} type="submit">
+                    <span className={styles.contactFormBtnText}>
+                      {buttonText}
+                    </span>
+                  </button>
+                  {status.message && (
+                    <p
+                      className={`${styles.status} ${
+                        status.success === false
+                          ? styles.danger
+                          : styles.success
+                      }`}
+                    >
+                      {status.message}
+                    </p>
+                  )}
+                </Col>
+              </Row>
+            </form>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
