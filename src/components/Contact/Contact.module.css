@@ -10,6 +10,11 @@
     width: 92%;
 }
 
+.contactImg {
+    align-items: center;
+    margin-top: 250px;
+}
+
 .contactText {
     font-size: 45px;
     font-weight: 700;
@@ -69,7 +74,7 @@
     background-color: var(--color-bg);
     padding: 14px 48px;
     font-size: 18px;
-    margin-top: 25px;
+    margin-top: 10px;
     border-radius: 0;
     position: relative;
     transition: 0.3s ease-in-out;

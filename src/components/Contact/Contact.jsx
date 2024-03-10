@@ -7,7 +7,6 @@ import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Contact = () => {
-
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
   const form = useRef();
@@ -22,14 +21,15 @@ export const Contact = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
           setButtonText("Send");
           setStatus({ success: true, message: "Message sent successfully!" });
         },
         (error) => {
-          console.log('FAILED...', error);
           setButtonText("Send");
-          setStatus({ success: false, message: "Something went wrong, please try again later." });
+          setStatus({
+            success: false,
+            message: "Something went wrong, please try again later.",
+          });
         }
       );
   };
@@ -38,9 +38,11 @@ export const Contact = () => {
     <section id="contact" className={styles.contact}>
       <Container>
         <Row className={styles.contactRow}>
-          <Col md={6}>{/* <img src={} alt="Contact"/> */}</Col>
           <Col md={6}>
-            <h2 className={styles.contactText}>Contact Me</h2>
+            <img src={getImageUrl("contact/contactImage.png")} alt="Contact" className={styles.contactImg}/>
+          </Col>
+          <Col md={6}>
+            <h2 className={styles.contactText}>Email Me</h2>
             <form onSubmit={sendEmail} ref={form}>
               <Row>
                 <Col sm={6} className={styles.contactFormCol}>
@@ -85,16 +87,20 @@ export const Contact = () => {
                 </Col>
                 <Col className={styles.contactFormBtnCol}>
                   <button className={styles.contactFormBtn} type="submit">
-                      <span className={styles.contactFormBtnText}>{buttonText}</span>
-                    </button>
-                    {status.message && (
-                      <p
-                        className={`${styles.status} ${
-                          status.success === false ? styles.danger : styles.success
-                        }`}
-                      >
-                        {status.message}
-                      </p>
+                    <span className={styles.contactFormBtnText}>
+                      {buttonText}
+                    </span>
+                  </button>
+                  {status.message && (
+                    <p
+                      className={`${styles.status} ${
+                        status.success === false
+                          ? styles.danger
+                          : styles.success
+                      }`}
+                    >
+                      {status.message}
+                    </p>
                   )}
                 </Col>
               </Row>
