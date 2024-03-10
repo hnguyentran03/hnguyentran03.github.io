@@ -13,10 +13,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@fontsource/outfit": "^5.0.8",
     "@fontsource/roboto": "^5.0.8",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
+    "emailjs": "^4.0.3",
     "express": "^4.18.3",
     "framer-motion": "^11.0.8",
     "nodemailer": "^6.9.12",

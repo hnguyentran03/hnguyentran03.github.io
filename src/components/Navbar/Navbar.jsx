@@ -9,42 +9,46 @@ import { getImageUrl } from "../../utils";
 
 export const NavBar = () => {
   return (
-    <Navbar expand="lg" className={styles.navbar_sticky}>
+    <Navbar expand="lg" className={styles.navbarSticky}>
       <Container>
-        <Navbar.Brand href="#home" className={styles.navbar_brand}>
+        <Navbar.Brand href="#home" className={styles.navbarBrand}>
           Portfolio
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className={styles.navbar_toggler_icon}></span>
+          <span className={styles.navbarTogglerIcon}></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#about" className={styles.navbar_link}>
+            <Nav.Link href="#about" className={styles.navbarLink}>
               About
             </Nav.Link>
-            <Nav.Link href="#experience" className={styles.navbar_link}>
+            <Nav.Link href="#experience" className={styles.navbarLink}>
               Experience
             </Nav.Link>
-            <Nav.Link href="#projects" className={styles.navbar_link}>
+            <Nav.Link href="#projects" className={styles.navbarLink}>
               Projects
             </Nav.Link>
-            <Nav.Link href="#contact" className={styles.navbar_link}>
+            <Nav.Link href="#contact" className={styles.navbarLink}>
               Contact
             </Nav.Link>
           </Nav>
-          <span className={styles.navbar_text}>
-            <div className={styles.social_icon}>
-              <a href="https://www.linkedin.com/in/hnguyentran03/"
-                 target="_blank"
-                 rel="noopener noreferrer">
+          <span className={styles.navbarText}>
+            <div className={styles.socialIcon}>
+              <a
+                href="https://www.linkedin.com/in/hnguyentran03/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={getImageUrl("contact/linkedinIcon.png")}
                   alt="Linkedin"
                 />
               </a>
-              <a href="https://github.com/hnguyentran03"
-                 target="_blank"
-                 rel="noopener noreferrer">
+              <a
+                href="https://github.com/hnguyentran03"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={getImageUrl("contact/githubIcon.png")} alt="Github" />
               </a>
             </div>

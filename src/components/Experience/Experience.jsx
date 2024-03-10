@@ -14,12 +14,13 @@ export const Experience = () => {
           {history.map((historyItem, id) => {
             return (
               <a
+                key={id}
                 className={styles.historyItemContainer}
                 href={historyItem.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <li key={id} className={styles.historyItem}>
+                <li className={styles.historyItem}>
                   <img
                     src={getImageUrl(historyItem.imageSrc)}
                     alt={`${historyItem.organization} logo`}
