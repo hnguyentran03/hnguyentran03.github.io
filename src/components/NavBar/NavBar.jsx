@@ -14,7 +14,7 @@ export const NavBar = () => {
         <Navbar.Brand href="#home" className={styles.navbarBrand}>
           Portfolio
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle className={styles.navbarToggler} aria-controls="basic-navbar-nav">
           <span className={styles.navbarTogglerIcon}></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">

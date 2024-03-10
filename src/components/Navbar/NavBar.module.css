@@ -159,18 +159,18 @@ span.navbarText {
 	top: 8px;
 }
 
-.navbarTogglerIcon:active:after, .navbarTogglerIcon:after:focus {
+.navbarToggler[aria-expanded="true"] .navbarTogglerIcon:after {
 	transform: rotate(45deg);
 	background-color: var(--color-text-title);
 	height: 2px;
 }
 
-.navbarTogglerIcon:active:before, .navbarTogglerIcon:after:focus {
+.navbarToggler[aria-expanded="true"] .navbarTogglerIcon:before {
 	transform: translateY(8px) rotate(-45deg);
 	background-color: var(--color-text-title);
 	height: 2px;
 }
 
-.navbarTogglerIcon:active {
+.navbarToggler[aria-expanded="true"] .navbarTogglerIcon {
 	border-color: transparent;
 }
