@@ -22,7 +22,7 @@ export const About = () => {
             <p>
               Recently, I've taken an interest in game development, and have
               recreated a few games in my free time. Other than that, I've also
-              tried my hand at AI/ML and incoorperating them into the games I've
+              tried my hand at AI/ML and incorporating them into the games I've
               made.
             </p>
           </div>
