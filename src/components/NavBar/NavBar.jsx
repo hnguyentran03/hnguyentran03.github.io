@@ -11,7 +11,7 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={styles.navbarSticky}>
       <Container>
-        <Navbar.Brand href="#home" className={styles.navbarBrand}>
+        <Navbar.Brand href="#" className={styles.navbarBrand}>
           Portfolio
         </Navbar.Brand>
         <Navbar.Toggle className={styles.navbarToggler} aria-controls="basic-navbar-nav">

@@ -106,6 +106,17 @@
     width: 75px;
 }
 
+.skillImage:hover {
+    animation: rot;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rot {
+    100% {transform: rotate(1turn);}
+}
+
 .skill p {
     font-size: 25px;
     font-family: var(--font-roboto);
