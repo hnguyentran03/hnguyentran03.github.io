@@ -16,11 +16,28 @@
 
 .projects {
     margin-top: 37px;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    width: 100%;
+    width: auto
+}
+
+.project {
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+}
+
+.projects:hover .project {
+    opacity: 0.5;
+    filter: blur(3px);
+}
+
+.projects .project:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1.1);
 }

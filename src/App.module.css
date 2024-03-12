@@ -4,9 +4,11 @@
     background-color: var(--color-bg);
     width: 100%;
     height: 100%;
+    
 }
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-padding: 200px;
 }

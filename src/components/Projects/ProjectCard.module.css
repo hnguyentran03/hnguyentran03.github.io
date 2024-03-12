@@ -40,6 +40,7 @@
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
+  margin-left: -30px;
 }
 
 .skill {
@@ -48,6 +49,7 @@
   border-radius: 100px;
   background: var(--color-dark);
   padding: 2px 22px;
+  
 }
 
 .links {
