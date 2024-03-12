@@ -33,7 +33,7 @@ export const Hero = () => {
     console.log(newFullText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta((prevDelta) => prevDelta < 25 ? 25 : prevDelta / 2);
     }
 
     if (!isDeleting && newFullText === fullText) {
@@ -53,13 +53,13 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hello, I'm Ben</h1>
+        <h1 className={styles.title}>Hello, I'm Ben Nguyen</h1>
         <p className={styles.description}>
           {" "}
           I am a{" "}
           <span
             data-period="1000"
-            data-rotate='["Croaker", "Computer Science student", "Software Engineer"]'
+            data-rotate={`${rotation}`}
           >
             {text}
           </span>
