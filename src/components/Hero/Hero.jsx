@@ -9,7 +9,7 @@ export const Hero = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const rotation = ["Croaker", "Computer Science student", "Software Engineer"];
+  const rotation = ["Computer Science student", "Software Engineer"];
   const period = 1000;
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export const Hero = () => {
             {text}
           </span>
         </p>
-        <a href="mailto:hnguyentran03@gmail.com" className={styles.contactBtn}>
+        <a href="#contact" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>

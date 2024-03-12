@@ -1,11 +1,12 @@
 @import "../../vars.css";
 
 .navbarSticky {
+    position: fixed;
     padding: 18px 0;
     width: 100%;
     top: 0;
     z-index: 3;
-    transition:  0.32s ease-in-out;
+    background-color: var(--color-bg);
 }
 
 .navbarBrand {
@@ -35,7 +36,6 @@ a.navbarLink:hover, a.navbarLink.active {
 
 span.navbarText {
     display: flex;
-    align-items: center;
 }
 
 .socialIcon {
@@ -88,7 +88,7 @@ span.navbarText {
   padding: 20px 30px;
   font-size: 25px;
   margin-left: 15px;
-  margin-top:15px;
+  /* margin-top:15px; */
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
