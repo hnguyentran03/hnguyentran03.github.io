@@ -17,12 +17,12 @@
       "imageSrc": "skills/numpy.png"
     },
     {
-      "title": "sklearn",
-      "imageSrc": "skills/sklearn.png"
-    },
-    {
       "title": "Pandas",
       "imageSrc": "skills/pandas.png"
+    },
+    {
+      "title": "sklearn",
+      "imageSrc": "skills/sklearn.png"
     },
     {
       "title": "HTML",

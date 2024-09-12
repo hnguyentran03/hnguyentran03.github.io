@@ -1,5 +1,23 @@
 [
     {
+      "title": "PDF Translator",
+      "date": "July 2024",
+      "imageSrc": "projects/pdf-translate.png",
+      "description": "Application to translate PDFs while keeping the original format using GPT models for translations.",
+      "skills": ["Python", "OpenAI"],
+      "demo": "",
+      "source": "https://github.com/hnguyentran03/pdf-translator"
+    },
+    {
+      "title": "Steam Game Embeddings",
+      "date": "June - July 2024",
+      "imageSrc": "projects/game-embedding.png",
+      "description": "Visualizations of steam game descriptions using SBERT alongside dimension reduction and query generation for search.",
+      "skills": ["Jupyter", "ML"],
+      "demo": "",
+      "source": "https://github.com/hnguyentran03/game-embeddings"
+    },
+    {
       "title": "Fraud Detection",
       "date": "Jan 2024",
       "imageSrc": "projects/dec-tree.png",

@@ -13,8 +13,8 @@ export const About = () => {
           <h2 className={styles.title}>About</h2>
           <div className={`${styles.aboutItems} ${styles.aboutItemText}`}>
             <p>
-              Hello! I'm <span className={styles.custom_bold}>Ben Nguyen</span>, a junior at Carnegie Mellon
-              University majoring in Computer Science. During my time at CMU, I
+              Hello! I'm <span className={styles.custom_bold}>Ben Nguyen</span>, a senior at Carnegie Mellon
+              University majoring in Computer Science and doing a concentration in Security and Privacy. During my time at CMU, I
               worked as a teaching assistant for the course 15-112: Fundamentals
               of Programming and Computer Science, and also took on the role as
               the division lead for review.
