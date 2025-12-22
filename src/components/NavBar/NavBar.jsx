@@ -53,7 +53,7 @@ export const NavBar = () => {
               </a>
             </div>
             <a
-              href="https://drive.google.com/file/d/1hEuz9u77W6IIsGGWFwhqy8Z4MaRofIR8/view?usp=sharing"
+              href="https://drive.google.com/file/d/1cgL40oSnAw6IfrdIv7D8LnCFF0k6E2RL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

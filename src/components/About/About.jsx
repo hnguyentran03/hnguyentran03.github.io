@@ -20,6 +20,9 @@ export const About = () => {
               the division lead for review.
             </p>
             <p>
+              I've interned at FPT Software as an AI Engineer Intern, where I first started in December 2023, where I learned the fundamentals of machine learning, and worked on projects involving basic data annotation and machine learning models. I returned for another internship from May to August 2024, where I worked on improving an embedding model, and leveraging LLMs to develop various applications.
+            </p>
+            <p>
               Recently, I've taken an interest in game development, and have
               recreated a few games in my free time. Other than that, I've also
               tried my hand at AI/ML and incorporating them into the games I've

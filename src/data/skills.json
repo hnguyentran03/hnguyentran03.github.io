@@ -9,8 +9,20 @@
       "imageSrc": "skills/c.png"
     },
     {
+      "title": "C++",
+      "imageSrc": "skills/cpp.png"
+    },
+    {
       "title": "JavaScript",
       "imageSrc": "skills/javascript.png"
+    },
+    {
+      "title": "Docker",
+      "imageSrc": "skills/docker.png"
+    },
+    {
+      "title": "AWS",
+      "imageSrc": "skills/aws.png"
     },
     {
       "title": "NumPy",
@@ -23,6 +35,10 @@
     {
       "title": "sklearn",
       "imageSrc": "skills/sklearn.png"
+    },
+    {
+      "title": "Rust",
+      "imageSrc": "skills/rust.png"
     },
     {
       "title": "HTML",

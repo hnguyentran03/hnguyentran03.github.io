@@ -1,20 +1,40 @@
 [
-    {
-      "role": "AI Engineer Intern",
-      "organization": "FPT Software",
-      "startDate": "Dec 2023",
-      "endDate": "Jan 2024 and May 2024-Aug 2024",
-      "experiences": ["Analyzed and improved embedding models by generating high-quality training data", "Developed an LLM to transform user inputted text into workflows", "Labeled and annotated data for semantic search", "Researched and presented benefits and drawbacks of traditional search engines vs. LLM-based search engines"],
-      "imageSrc": "history/fpt.png",
-      "link": "https://fptsoftware.com/"
-    },
-    {
-      "role": "Teaching Assistant for 15-112",
-      "organization": "Carnegie Mellon University",
-      "startDate": "Jan 2022",
-      "endDate": "Dec 2022",
-      "experiences": ["Led a review team providing feedback on homeworks, exams and class notes", "Taught recitations, group sessions and office hours", "Mentored students through a 3-week long term project"],
-      "imageSrc": "history/112.png",
-      "link": "https://www.cs.cmu.edu/~112/"
-    }
-  ]
+  {
+    "role": "AI Engineer Intern",
+    "organization": "FPT Software",
+    "startDate": "May 2024",
+    "endDate": "Aug 2024",
+    "experiences": [
+      "Analyzed and improved embedding models by 30% by generating high-quality training data",
+      "Engineered a program to translate PDF documents into any language using LLMs",
+      "Developed an LLM to transform user inputted text into workflows"
+    ],
+    "imageSrc": "history/fpt.png",
+    "link": "https://fptsoftware.com/"
+  },
+  {
+    "role": "AI Engineer Intern",
+    "organization": "FPT Software",
+    "startDate": "Dec 2023",
+    "endDate": "Jan 2024",
+    "experiences": [
+      "Labeled and annotated data for semantic search",
+      "Researched and presented benefits and drawbacks of traditional search engines vs. LLM-based search engines"
+    ],
+    "imageSrc": "history/fpt.png",
+    "link": "https://fptsoftware.com/"
+  },
+  {
+    "role": "Teaching Assistant for 15-112",
+    "organization": "Carnegie Mellon University",
+    "startDate": "Jan 2022",
+    "endDate": "Dec 2022",
+    "experiences": [
+      "Led a review team providing feedback on homeworks, exams and class notes",
+      "Taught recitations, group sessions and office hours",
+      "Mentored students through a 3-week long term project"
+    ],
+    "imageSrc": "history/112.png",
+    "link": "https://www.cs.cmu.edu/~112/"
+  }
+]
