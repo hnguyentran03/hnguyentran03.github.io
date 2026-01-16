@@ -1,47 +1,56 @@
 [
-    {
-      "title": "PDF Translator",
-      "date": "July 2024",
-      "imageSrc": "projects/pdf-translate.png",
-      "description": "Application to translate PDFs while keeping the original format using GPT models for translations.",
-      "skills": ["Python", "OpenAI"],
-      "demo": "",
-      "source": "https://github.com/hnguyentran03/pdf-translator"
-    },
-    {
-      "title": "Steam Game Embeddings",
-      "date": "June - July 2024",
-      "imageSrc": "projects/game-embedding.png",
-      "description": "Visualizations of steam game descriptions using SBERT alongside dimension reduction and query generation for search.",
-      "skills": ["Jupyter", "ML"],
-      "demo": "",
-      "source": "https://github.com/hnguyentran03/game-embeddings"
-    },
-    {
-      "title": "Fraud Detection",
-      "date": "Jan 2024",
-      "imageSrc": "projects/dec-tree.png",
-      "description": "This is a project made to learn the data analysis and machine learning models to detect transaction frauds.",
-      "skills": ["Jupyter", "ML"],
-      "demo": "",
-      "source": "https://github.com/hnguyentran03/card_detection"
-    },
-    {
-      "title": "Tetris",
-      "date": "Oct 2021 - Feb 2022",
-      "imageSrc": "projects/tetris.png",
-      "description": "This is a project adapted from a homework from 15-112 at CMU with multiple additional features including an AI.",
-      "skills": ["Python"],
-      "demo": "",
-      "source": "https://github.com/hnguyentran03/tetris"
-    },
-    {
-      "title": "112maze",
-      "date": "Nov - Dec 2021",
-      "imageSrc": "projects/maze.png",
-      "description": "A 15-112 term project with the focus on implementing maze-generation, pathfinding and raycasting.",
-      "skills": ["Python"],
-      "demo": "",
-      "source": "https://github.com/hnguyentran03/112-tp"
-    }
-  ]
+  {
+    "title": "File Integrity Checker",
+    "date": "Jan 2026",
+    "imageSrc": "projects/integrity-check.png",
+    "description": "Command line tool to verify file integrity by using cryptographic hashing algorithms to detect changes.",
+    "skills": ["Rust"],
+    "demo": "",
+    "source": "https://github.com/hnguyentran03/integrity-check"
+  },  
+  {
+    "title": "PDF Translator",
+    "date": "Jul 2024",
+    "imageSrc": "projects/pdf-translate.png",
+    "description": "Application to translate PDFs to any language while keeping the original format using GPT models for translations.",
+    "skills": ["Python", "OpenAI"],
+    "demo": "",
+    "source": "https://github.com/hnguyentran03/pdf-translator"
+  },
+  {
+    "title": "Steam Game Embeddings",
+    "date": "Jun - Jul 2024",
+    "imageSrc": "projects/game-embedding.png",
+    "description": "Visualizations of steam game descriptions using SBERT alongside dimension reduction and query generation for search.",
+    "skills": ["Jupyter", "ML"],
+    "demo": "",
+    "source": "https://github.com/hnguyentran03/game-embeddings"
+  },
+  {
+    "title": "Fraud Detection",
+    "date": "Jan 2024",
+    "imageSrc": "projects/dec-tree.png",
+    "description": "This is a project made to learn the data analysis and machine learning models to detect transaction frauds.",
+    "skills": ["Jupyter", "ML"],
+    "demo": "",
+    "source": "https://github.com/hnguyentran03/card_detection"
+  },
+  {
+    "title": "Tetris",
+    "date": "Oct 2021 - Feb 2022",
+    "imageSrc": "projects/tetris.png",
+    "description": "This is a project adapted from a homework from 15-112 at CMU with multiple additional features including an AI.",
+    "skills": ["Python"],
+    "demo": "",
+    "source": "https://github.com/hnguyentran03/tetris"
+  },
+  {
+    "title": "112maze",
+    "date": "Nov - Dec 2021",
+    "imageSrc": "projects/maze.png",
+    "description": "A 15-112 term project with the focus on implementing maze-generation, pathfinding and raycasting.",
+    "skills": ["Python"],
+    "demo": "",
+    "source": "https://github.com/hnguyentran03/112-tp"
+  }
+]
