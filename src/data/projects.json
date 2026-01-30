@@ -4,7 +4,7 @@
     "date": "Jan 2026",
     "imageSrc": "projects/integrity-check.png",
     "description": "Command line tool to verify file integrity by using cryptographic hashing algorithms to detect changes.",
-    "skills": ["Rust"],
+    "skills": ["Rust", "SQL"],
     "demo": "",
     "source": "https://github.com/hnguyentran03/integrity-check"
   },  
@@ -40,8 +40,8 @@
     "date": "Oct 2021 - Feb 2022",
     "imageSrc": "projects/tetris.png",
     "description": "This is a project adapted from a homework from 15-112 at CMU with multiple additional features including an AI.",
-    "skills": ["Python"],
-    "demo": "",
+    "skills": ["Python", "AI"],
+    "demo": "https://github.com/hnguyentran03/tetris/releases/latest",
     "source": "https://github.com/hnguyentran03/tetris"
   },
   {
@@ -50,7 +50,7 @@
     "imageSrc": "projects/maze.png",
     "description": "A 15-112 term project with the focus on implementing maze-generation, pathfinding and raycasting.",
     "skills": ["Python"],
-    "demo": "",
+    "demo": "https://github.com/hnguyentran03/112-tp/releases/latest",
     "source": "https://github.com/hnguyentran03/112-tp"
   }
 ]
