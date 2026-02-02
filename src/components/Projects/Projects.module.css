@@ -27,17 +27,25 @@
 
 .project {
     flex-shrink: 0;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     max-width: 100%;
 }
 
-.projects:hover .project {
+.projects:has(.project:hover) .project:not(:hover) {
     opacity: 0.5;
     filter: blur(3px);
+    box-shadow: 0 0px 0px 0 #04152d;
 }
 
 .projects .project:hover {
     opacity: 1;
     filter: blur(0px);
     transform: scale(1.1);
+    z-index: 1;
+}
+
+/* Project is being unhovered, so this style keeps the z-index until the transition is over */
+.projectHovered {
+    position: relative;
+    z-index: 1;
 }
