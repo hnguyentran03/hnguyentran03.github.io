@@ -9,7 +9,7 @@ export const Hero = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const rotation = ["Computer Science student", "Software Engineer"];
+  const rotation = ["Computer Science graduate", "Software Engineer"];
   const period = 1000;
 
   useEffect(() => {

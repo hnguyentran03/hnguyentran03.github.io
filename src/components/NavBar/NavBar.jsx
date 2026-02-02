@@ -12,7 +12,11 @@ export const NavBar = () => {
     <Navbar expand="lg" className={styles.navbarSticky}>
       <Container>
         <Navbar.Brand href="#" className={styles.navbarBrand}>
-          Portfolio
+          <img
+            src={getImageUrl("hero/heroImage.png")}
+            alt="Home"
+            className={styles.navbarBrandImg}
+          />
         </Navbar.Brand>
         <Navbar.Toggle className={styles.navbarToggler} aria-controls="basic-navbar-nav">
           <span className={styles.navbarTogglerIcon}></span>
