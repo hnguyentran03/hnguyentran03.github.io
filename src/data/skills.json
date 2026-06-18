@@ -17,6 +17,14 @@
       "imageSrc": "skills/javascript.png"
     },
     {
+      "title": "Rust",
+      "imageSrc": "skills/rust.png"
+    },
+    {
+      "title": "Git",
+      "imageSrc": "skills/git.png"
+    },
+    {
       "title": "Docker",
       "imageSrc": "skills/docker.png"
     },
@@ -37,10 +45,6 @@
       "imageSrc": "skills/sklearn.png"
     },
     {
-      "title": "Rust",
-      "imageSrc": "skills/rust.png"
-    },
-    {
       "title": "HTML",
       "imageSrc": "skills/html.png"
     },
@@ -51,9 +55,5 @@
     {
       "title": "React",
       "imageSrc": "skills/react.png"
-    },
-    {
-      "title": "Git",
-      "imageSrc": "skills/git.png"
     }
 ]
