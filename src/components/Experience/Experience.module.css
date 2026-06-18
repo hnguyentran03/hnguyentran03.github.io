@@ -86,6 +86,10 @@ img {
     font-weight: 300;
 }
 
+.separator {
+    margin: 0 12px;
+}
+
 .historyItemDetails ul {
     margin-top: 6px;
     list-style-position: inside;
